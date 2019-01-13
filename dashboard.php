@@ -10,5 +10,17 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
 ?>
 
+<!doctype html>
+<html lang="en">
+    <?php
+        include_once ('inc/head.php');
+    ?>
+<body>
 
-<h1>This is the dashboard, when you are logged in.</h1>
+    <?php
+        include_once ('inc/navbar.php');
+    ?>
+
+
+</body>
+</html>
