@@ -13,7 +13,7 @@
                     <p>Ein familientraum wird wahr.<br>
                         Obergösgen
                     </p>
-                    <p><a href="#">Read more</a></p>
+                    <p><a href="angebote.php">Read more</a></p>
                 </div>
             </div>
             <div class="col-12 col-md-8 m-auto col-lg-4 pt-5 pt-lg-0">
@@ -23,7 +23,7 @@
                     <p>Ein familientraum wird wahr.<br>
                         Obergösgen
                     </p>
-                    <p><a href="#">Read more</a></p>
+                    <p><a href="angebote.php">Read more</a></p>
                 </div>
             </div>
             <div class="col-12 col-md-8 m-auto col-lg-4 pt-5 pt-lg-0">
@@ -33,7 +33,7 @@
                     <p>Ein familientraum wird wahr.<br>
                         Obergösgen
                     </p>
-                    <p><a href="#">Read more</a></p>
+                    <p><a href="angebote.php">Read more</a></p>
                 </div>
             </div>
         </div>

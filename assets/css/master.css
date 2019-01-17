@@ -48,3 +48,95 @@
 .loggedIn a {
   color: #fff;
 }
+.ace {
+  position: relative;
+  z-index: 0;
+  background-attachment: fixed;
+}
+.ace:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.4);
+}
+.ace > .container {
+  position: relative;
+  z-index: 2;
+}
+.inner-img {
+  width: 80px;
+  user-select: none;
+}
+.divider {
+  width: 100%;
+  height: 1.5px;
+  background: rgba(0,0,0,0.2);
+  margin: 20px 0;
+}
+.acex {
+  list-style: none;
+  color: #87949f;
+  text-align: center;
+  margin: 0;
+  padding-left: 0;
+}
+.aceli {
+  position: relative;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-top: 2px solid rgba(135,148,159,0.1);
+  border-bottom: 2px solid rgba(135,148,159,0.1);
+  padding: 20px;
+  transition: all 0.5s ease;
+  user-select: none;
+}
+.aceli::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 3px;
+  background: #87949f;
+  transform: translate(50%);
+  left: 0%;
+  bottom: 0;
+  transition: all 0.5s ease;
+}
+.aceli::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 3px;
+  background: #87949f;
+  transform: translate(50%);
+  left: 0%;
+  top: 0;
+  transition: all 0.5s ease;
+}
+.aceli:hover {
+  transform: scale(1.05);
+}
+.aceli:hover::after {
+  background: #006df0;
+}
+.aceli:hover::before {
+  background: #006df0;
+}
+.acey {
+  border-left: none !important;
+}
+.acey h3 {
+  text-align: center !important;
+}
+.acey:nth-child(2) {
+  border-left: 2px solid rgba(0,0,0,0.1) !important;
+  border-right: 2px solid rgba(0,0,0,0.1) !important;
+}
+.acey:nth-child(3) {
+  border-left: 2px solid rgba(0,0,0,0.1);
+}
+.acey:nth-child(4) {
+  border-left: 2px solid rgba(0,0,0,0.1) !important;
+}

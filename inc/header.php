@@ -11,7 +11,7 @@
                 <h1>Wir bringen Sie nach Hause!</h1>
                 <p class="lead">Wir vermitteln Bauland, Mehrfamilien- und Geschäftshäuser sowie Wohnungen und Garagenplätze.</p>
                 <p>Zudem sind wir ausgewiesene Spezialisten bei der Bewertung von Einzelobjekten, Portfolios und Projektentwicklungen.</p>
-                <p class="mt-4 mb-5"><a class="btn btn-primary" href="#">Mehr sehen</a></p>
+                <p class="mt-4 mb-5"><a class="btn btn-primary" href="angebote.php">Mehr sehen</a></p>
             </div>
         </div>
     </div>
