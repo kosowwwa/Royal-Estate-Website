@@ -64,6 +64,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                             $_SESSION["id"] = $id;
                             $_SESSION["username"] = $username;
 
+                            $myid = $_SESSION["id"];
+
                             // Redirect user to welcome page
                             header("location: dashboard.php");
                         } else{
@@ -91,35 +93,47 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Login</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
-    <style type="text/css">
-        body{ font: 14px sans-serif; }
-        .wrapper{ width: 350px; padding: 20px; }
-    </style>
-</head>
+<?php
+    include_once ('inc/head.php');
+?>
 <body>
-<div class="wrapper">
-    <h2>Login</h2>
-    <p>Please fill in your credentials to login.</p>
-    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-        <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
-            <label>Username</label>
-            <input type="text" name="username" class="form-control" value="<?php echo $username; ?>">
-            <span class="help-block"><?php echo $username_err; ?></span>
+
+
+<section class="fdb-block" style="background-image: url(assets/imgs/houses/brian-babb-256298-unsplash.jpg);height: auto;min-height: 100vh;">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 col-lg-7 col-xl-5 text-center">
+                <div class="fdb-box">
+                    <div class="row">
+                        <div class="col">
+                            <h1>Log In</h1>
+                            <p>Please fill in your credentials to login.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" style="width: 100%;">
+                            <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>" style="text-align: left;">
+                                <label style="color: #999;">Username</label>
+                                <input type="text" name="username" class="form-control mb-1" value="<?php echo $username; ?>">
+                                <span class="help-block"><?php echo $username_err; ?></span>
+                            </div>
+                            <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>" style="text-align: left;">
+                                <label style="color: #999;">Password</label>
+                                <input type="password" name="password" class="form-control mb-1">
+                                <span class="help-block"><?php echo $password_err; ?></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" class="btn btn-outline-primary" value="Login" style="width: 100%;">
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
         </div>
-        <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
-            <label>Password</label>
-            <input type="password" name="password" class="form-control">
-            <span class="help-block"><?php echo $password_err; ?></span>
-        </div>
-        <div class="form-group">
-            <input type="submit" class="btn btn-primary" value="Login">
-        </div>
-        <p>Don't have an account? <a href="register.php">Sign up now</a>.</p>
-    </form>
-</div>
+    </div>
+</section>
+
+
 </body>
 </html>

@@ -40,11 +40,11 @@
                             $test = '
                                         <div class="loggedIn">
                                             <div class="noContainer">
-                                                <div class="row">
+                                                <div class="row" style="margin: 0;">
                                                     <div class="col-sm">
-                                                        <ul class="nav" style="float: right;margin-right: 7px;">
+                                                        <ul class="nav" style="float: right;margin-right: -7px;">
                                                             <li class="nav-item">
-                                                                <a class="nav-link" href="#">Profile</a>
+                                                                <a class="nav-link" href="profile.php">Profile</a>
                                                             </li>
                                                             <li class="nav-item">
                                                                 <a class="nav-link" href="#">Angebote</a>

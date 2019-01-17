@@ -15,7 +15,7 @@
     ?>
 
     <section class="fdb-block py-0">
-        <div class="container bg-r py-5 my-5" style="background-image: url(assets/imgs/shapes/1.svg);background-size: 30%;">
+        <div class="container bg-r py-5 my-5" style="background-image: url(assets/imgs/royalestate/agent.svg);background-size: 30%;">
             <div class="row py-5">
                 <div class="col-12 col-sm-10 col-md-8 col-lg-6 text-left">
                     <p>
