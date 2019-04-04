@@ -8,6 +8,8 @@
     include_once ('inc/head.php');
 ?>
 <body>
+    
+    TEST
     <?php
         include_once ('inc/navbar.php');
         include_once('inc/header.php');
